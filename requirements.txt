@@ -8,3 +8,4 @@ Pillow
 pymupdf
 transformers
 torch
+somepackage==1.2.3
