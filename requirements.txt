@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy==2.0.28
+python-multipart
+pydantic
+pytesseract
+Pillow
+pymupdf
+transformers
+torch
