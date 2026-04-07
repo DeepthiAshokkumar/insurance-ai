@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Insurance Claim Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="active">Verification App</a>
+        <a href="admin.html">Admin Dashboard</a>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>AI Claim Verification</h1>
+            <p>Upload motor insurance claim documents for instant AI analysis and verification.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <form id="uploadForm">
+                    <div class="file-drop-area" id="dropArea">
+                        <span class="file-msg">Drag & Drop files here or click to browse</span>
+                        <input type="file" id="fileInput" name="files" multiple accept="image/*,application/pdf">
+                    </div>
+                    <div id="fileList" class="file-list"></div>
+                    <button type="submit" id="submitBtn" class="btn-primary" disabled>Verify Documents</button>
+                </form>
+            </div>
+
+            <div id="loading" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Analyzing documents ...</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container hidden">
+                <h2>Verification Results</h2>
+                <div id="resultsList" class="results-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>
